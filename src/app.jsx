@@ -1,8 +1,8 @@
-
-import './app.css';
+import "./app.css";
+import Habit from "./components/habit";
 
 function App() {
-  return <h1>hello world im mingyo</h1>;
+  return <Habit></Habit>;
 }
 
 export default App;
