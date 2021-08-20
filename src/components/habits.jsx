@@ -46,7 +46,7 @@ class Habits extends Component {
 
   render() {
     return (
-      <ul>
+      <ul className="habits">
         {this.state.habits.map((habit) => {
           return (
             <Habit

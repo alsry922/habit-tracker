@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 import "./app.css";
 import Habits from "./components/habits";
+import Input from "./components/input";
 import Navbar from "./components/navbar";
 
 class App extends Component {
@@ -8,6 +9,7 @@ class App extends Component {
     return (
       <>
         <Navbar></Navbar>
+        <Input></Input>
         <Habits></Habits>;
       </>
     );
