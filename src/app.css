@@ -44,3 +44,25 @@ button {
   background-color: transparent;
   color: darkred;
 }
+
+.navbar {
+  background-color: palegoldenrod;
+  font-size: 2rem;
+  padding: 1em;
+}
+
+.navbar-logo {
+  color: green;
+  margin-right: 0.5em;
+}
+
+.navbar-count {
+  background-color: green;
+  color: white;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  border-radius: 50%;
+  margin-left: 0.5em;
+}
