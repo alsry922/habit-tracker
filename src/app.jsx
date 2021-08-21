@@ -62,6 +62,7 @@ class App extends Component {
           onIncrement={this.handleIncrement}
           onDecrement={this.handleDecrement}
           onDelete={this.handleDelete}
+          onReset={this.handleReset}
         />
       </>
     );
