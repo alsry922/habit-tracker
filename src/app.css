@@ -71,11 +71,11 @@ button {
   margin-left: 0.5em;
 }
 
-.input-form {
+.add-form {
   padding: 2rem 0.5rem;
 }
 
-.input {
+.add-input {
   font-size: 2rem;
   margin-right: 0.5em;
   outline: none;
@@ -83,13 +83,13 @@ button {
   border-radius: 0.1em;
 }
 
-.add {
+.add-button {
   font-size: 1.5rem;
   padding: 0.4em 0.5em;
   background-color: green;
   color: white;
 }
 
-.add:hover {
+.add-button:hover {
   opacity: 0.7;
 }

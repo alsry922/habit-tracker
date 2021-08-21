@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from "react";
 import "./app.css";
 import Habits from "./components/habits";
-import Input from "./components/input";
 import Navbar from "./components/navbar";
 
 class App extends Component {
@@ -52,6 +51,11 @@ class App extends Component {
     this.setState({ habits });
   };
 
+  handleAdd = (name) => {
+    const habits = [...this.state.habits, { id: Date.now(), name, count: 0 }];
+    this.setState({ habits });
+  };
+
   render() {
     return (
       <>
@@ -61,13 +65,13 @@ class App extends Component {
             this.state.habits.filter((item) => item.count !== 0).length
           }
         />
-        <Input />
         <Habits
           habits={this.state.habits}
           onIncrement={this.handleIncrement}
           onDecrement={this.handleDecrement}
           onDelete={this.handleDelete}
           onReset={this.handleReset}
+          onAdd={this.handleAdd}
         />
       </>
     );
