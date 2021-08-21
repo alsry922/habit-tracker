@@ -55,7 +55,12 @@ class App extends Component {
   render() {
     return (
       <>
-        <Navbar habits={this.state.habits} />
+        <Navbar
+          habits={this.state.habits}
+          totalCount={
+            this.state.habits.filter((item) => item.count !== 0).length
+          }
+        />
         <Input />
         <Habits
           habits={this.state.habits}
